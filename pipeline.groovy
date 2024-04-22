@@ -6,12 +6,12 @@ pipeline {
   stages {
     stage('build'){
       steps {
-        sh 'docker build -t thetharz/3996-node-app-image .'
+        sh 'docker build -t 4248-ishan-app .'
       }
     }
     stage('run'){
       steps{
-        sh 'docker run -d -p 5000:3000 thetharz/3996-node-app-image'
+        sh 'docker run -d -p 5000:3000 4248-ishan-app'
       }
     }
     stage('final'){
